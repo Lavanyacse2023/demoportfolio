@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Alex Morgan - Senior Software Engineer specializing in full-stack web development, distributed systems, and cloud architecture.">
+    <title>Alex Morgan | Senior Software Engineer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=Pixelify+Sans:wght@500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ======================================================= -->
+    <!-- 1. HEADER SECTION & NAVIGATION                          -->
+    <!-- ======================================================= -->
+    <header class="site-header" id="header">
+        <div class="container header-container">
+            <a href="#hero" class="logo" id="brand-logo" aria-label="Alex Morgan Portfolio Home">
+                <span class="logo-code">&lt;</span><span class="logo-name">AlexMorgan</span><span class="logo-code"> /&gt;</span>
+            </a>
+
+            <!-- Main Navigation Menu -->
+            <nav class="main-nav" aria-label="Main Navigation" id="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#timeline" class="nav-link">Timeline</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#video-showcase" class="nav-link">Video</a></li>
+                    <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                    <li><a href="#ai-chat" class="nav-link"><i class="fa-solid fa-robot"></i> AI Chat</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Night Mode / Theme Toggle Button (CSS Media Queries default + Manual click) -->
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Night Mode" title="Toggle Light/Dark Theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                
+                <!-- Mobile Navigation Hamburger Button -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======================================================= -->
+    <!-- MAIN CONTENT CONTAINER                                  -->
+    <!-- ======================================================= -->
+    <main id="main-content">
+
+        <!-- ======================================================= -->
+        <!-- 2. HERO SECTION (Pixel Art Style & Background Image)    -->
+        <!-- ======================================================= -->
+        <section id="hero" class="hero-section pixel-hero">
+            <div class="pixel-scanlines" aria-hidden="true"></div>
+            <div class="pixel-grid-overlay" aria-hidden="true"></div>
+            
+            <div class="container hero-container">
+                <!-- Left Column: Pixel Art Dialogue & Welcome Info -->
+                <div class="hero-content pixel-box">
+                    <div class="pixel-box-header">
+                        <span class="pixel-dot red"></span>
+                        <span class="pixel-dot yellow"></span>
+                        <span class="pixel-dot green"></span>
+                        <span class="pixel-window-title">QUEST_LOG.EXE // DEV_STATUS</span>
+                    </div>
+
+                    <div class="badge-status pixel-badge">
+                        <span class="pulse-dot"></span> <span class="pixel-text-sm">PLAYER 1: READY FOR NEW QUESTS</span>
+                    </div>
+
+                    <h1 class="hero-title pixel-heading">
+                        WELCOME, VISITOR! <span class="pixel-blink">_</span><br>
+                        <span class="gradient-text pixel-sub-heading">I'M ALEX MORGAN</span>
+                    </h1>
+
+                    <p class="hero-subtitle pixel-tagline">
+                        Senior Full-Stack Software Engineer specializing in crafting high-performance cloud architectures, scalable backend systems, and pixel-perfect interactive web interfaces.
+                    </p>
+
+                    <!-- RPG Stats HUD Bar -->
+                    <div class="pixel-stats-hud">
+                        <div class="hud-stat">
+                            <span class="stat-name">CLASS:</span>
+                            <span class="stat-val">FULL-STACK WIZARD</span>
+                        </div>
+                        <div class="hud-stat">
+                            <span class="stat-name">EXP:</span>
+                            <span class="stat-val">6+ YRS (LVL 99)</span>
+                        </div>
+                        <div class="hud-stat-bars">
+                            <div class="bar-group">
+                                <span class="bar-label">HP [CLEAN CODE]:</span>
+                                <div class="pixel-meter"><div class="meter-fill hp-fill"></div></div>
+                            </div>
+                            <div class="bar-group">
+                                <span class="bar-label">MP [SYSTEM PERF]:</span>
+                                <div class="pixel-meter"><div class="meter-fill mp-fill"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pixel Action Buttons -->
+                    <div class="hero-cta-group pixel-cta-group">
+                        <a href="#projects" class="btn pixel-btn pixel-btn-primary" id="view-work-btn">
+                            <i class="fa-solid fa-gamepad"></i> <span>VIEW PROJECTS</span>
+                        </a>
+                        <a href="#ai-chat" class="btn pixel-btn pixel-btn-secondary" id="hero-chat-btn">
+                            <i class="fa-solid fa-robot"></i> <span>TALK TO AI ALEX</span>
+                        </a>
+                    </div>
+
+                    <!-- Pixel Tech Stack Badges -->
+                    <div class="hero-tech-stack pixel-tech-stack">
+                        <span class="tech-stack-label pixel-mono-label">[ EQUIPPED INVENTORY ]</span>
+                        <div class="tech-tags pixel-tags">
+                            <span><i class="fa-brands fa-react"></i> REACT</span>
+                            <span><i class="fa-brands fa-node-js"></i> NODE.JS</span>
+                            <span><i class="fa-brands fa-python"></i> PYTHON</span>
+                            <span><i class="fa-brands fa-docker"></i> DOCKER</span>
+                            <span><i class="fa-brands fa-aws"></i> AWS</span>
+                            <span><i class="fa-solid fa-database"></i> POSTGRES</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Pixel Art Avatar Card -->
+                <div class="hero-visual">
+                    <div class="profile-card-wrapper pixel-avatar-wrapper">
+                        <div class="profile-card pixel-avatar-card">
+                            <div class="pixel-avatar-header">
+                                <span class="pixel-avatar-title">AVATAR // ALEX.PNG</span>
+                            </div>
+                            <div class="image-wrapper pixel-frame">
+                                <img src="Profile.jpg" alt="Alex Morgan - Software Engineer Avatar" class="profile-img pixel-img" id="hero-profile-image">
+                            </div>
+                            <div class="pixel-floating-badge badge-1">
+                                <i class="fa-solid fa-code"></i> <span>CLEAN ARCHITECTURE</span>
+                            </div>
+                            <div class="pixel-floating-badge badge-2">
+                                <i class="fa-solid fa-bolt"></i> <span>ULTRA RESILIENT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- 4. ABOUT ME SECTION (Profile, Bio, Highlights, Interests) -->
+        <!-- ======================================================= -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">&lt;ABOUT_ME&gt;</span>
+                    <h2 class="section-title">Character Profile & Bio</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <!-- About Profile Image Card with pixel glass overlay -->
+                    <div class="about-image-container">
+                        <div class="about-card-glass pixel-border-box">
+                            <img src="BackGround.jpg" alt="Software engineering workspace environment" class="about-bg-img">
+                            <div class="about-glass-overlay">
+                                <div class="stat-box">
+                                    <span class="stat-number">6+</span>
+                                    <span class="stat-label">Years Experience</span>
+                                </div>
+                                <div class="stat-box">
+                                    <span class="stat-number">40+</span>
+                                    <span class="stat-label">Projects Shipped</span>
+                                </div>
+                                <div class="stat-box">
+                                    <span class="stat-number">99.9%</span>
+                                    <span class="stat-label">System Uptime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bio & Career Highlights -->
+                    <div class="about-bio">
+                        <div class="about-badge-tag">
+                            <i class="fa-solid fa-terminal"></i> <span>BIO // ALEX_MORGAN</span>
+                        </div>
+                        <h3 class="bio-heading">Building Scalable Digital Worlds One Line At A Time</h3>
+                        <p class="bio-text">
+                            I am a Senior Software Engineer passionate about clean software architecture, automated testing pipelines, and responsive, accessible user interfaces. I specialize in bridging complex distributed backend systems with seamless frontend experiences.
+                        </p>
+                        <p class="bio-text">
+                            Over the past 6+ years, I have architected high-traffic microservices handling millions of events daily, designed real-time telemetry dashboards, and optimized relational databases for high concurrency.
+                        </p>
+
+                        <!-- Career Highlights Grid -->
+                        <div class="about-key-highlights">
+                            <div class="highlight-item pixel-item-box">
+                                <div class="highlight-icon"><i class="fa-solid fa-server"></i></div>
+                                <div>
+                                    <h4>Distributed Backend Architecture</h4>
+                                    <p>Designing RESTful & gRPC services, resilient queues, and optimized databases.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item pixel-item-box">
+                                <div class="highlight-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                                <div>
+                                    <h4>Modern Frontend Engineering</h4>
+                                    <p>Crafting reactive, state-driven interfaces using React, TypeScript, and modern CSS.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item pixel-item-box">
+                                <div class="highlight-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                                <div>
+                                    <h4>DevOps, Cloud & CI/CD</h4>
+                                    <p>Automating infrastructure with Docker, Kubernetes, Terraform, and AWS.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Personal Interests -->
+                        <div class="personal-interests">
+                            <span class="interests-title"><i class="fa-solid fa-heart"></i> SIDE QUESTS & INTERESTS:</span>
+                            <div class="interest-tags">
+                                <span class="interest-tag"><i class="fa-solid fa-gamepad"></i> 8-Bit Game Dev</span>
+                                <span class="interest-tag"><i class="fa-solid fa-keyboard"></i> Custom Keyboards</span>
+                                <span class="interest-tag"><i class="fa-solid fa-chess"></i> Chess Engines</span>
+                                <span class="interest-tag"><i class="fa-solid fa-microchip"></i> IoT & Robotics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- 5. SKILLS SECTION (Categorized, Progress Bars, Icons)    -->
+        <!-- ======================================================= -->
+        <section id="skills" class="skills-section section-padding alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">&lt;TECH_SKILLS&gt;</span>
+                    <h2 class="section-title">Core Competencies & Stack</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Skills Categories Grid -->
+                <div class="skills-categories-grid">
+                    
+                    <!-- SKILL CATEGORY 1: Frontend Development -->
+                    <!-- Each skill element includes icon, name, proficiency score, and animated progress bar -->
+                    <div class="skill-category-card pixel-category-box">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code category-icon"></i>
+                            <h3>Frontend & UI</h3>
+                        </div>
+                        <div class="skill-list">
+                            <!-- Skill: JavaScript & TypeScript -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-brands fa-js"></i> TypeScript / JavaScript</span>
+                                    <span class="skill-pct">95%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="--skill-width: 95%;"></div></div>
+                            </div>
+                            <!-- Skill: React & Next.js -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-brands fa-react"></i> React & Next.js</span>
+                                    <span class="skill-pct">92%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="--skill-width: 92%;"></div></div>
+                            </div>
+                            <!-- Skill: HTML5 & Modern CSS -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-brands fa-css3-alt"></i> HTML5 / CSS3 / SCSS</span>
+                                    <span class="skill-pct">95%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="--skill-width: 95%;"></div></div>
+                            </div>
+                            <!-- Skill: State Management -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-cubes"></i> Redux / Zustand</span>
+                                    <span class="skill-pct">88%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="--skill-width: 88%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SKILL CATEGORY 2: Backend & Database Engineering -->
+                    <div class="skill-category-card pixel-category-box">
+                        <div class="category-header">
+                            <i class="fa-solid fa-database category-icon"></i>
+                            <h3>Backend & Databases</h3>
+                        </div>
+                        <div class="skill-list">
+                            <!-- Skill: Node.js & Express -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-brands fa-node-js"></i> Node.js & Express</span>
+                                    <span class="skill-pct">92%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="--skill-width: 92%;"></div></div>
+                            </div>
+                            <!-- Skill: Python & FastAPI -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-brands fa-python"></i> Python / FastAPI / Django</span>
+                                    <span class="skill-pct">88%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="--skill-width: 88%;"></div></div>
+                            </div>
+                            <!-- Skill: PostgreSQL & SQL -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-table"></i> PostgreSQL & MySQL</span>
+                                    <span class="skill-pct">85%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="--skill-width: 85%;"></div></div>
+                            </div>
+                            <!-- Skill: Redis & In-memory Caching -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-bolt"></i> Redis & MongoDB</span>
+                                    <span class="skill-pct">82%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="--skill-width: 82%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SKILL CATEGORY 3: Cloud & DevOps Infrastructure -->
+                    <div class="skill-category-card pixel-category-box">
+                        <div class="category-header">
+                            <i class="fa-solid fa-cloud category-icon"></i>
+                            <h3>DevOps & Cloud</h3>
+                        </div>
+                        <div class="skill-list">
+                            <!-- Skill: Docker & Kubernetes -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-brands fa-docker"></i> Docker & Kubernetes</span>
+                                    <span class="skill-pct">88%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="--skill-width: 88%;"></div></div>
+                            </div>
+                            <!-- Skill: Amazon Web Services (AWS) -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-brands fa-aws"></i> AWS (ECS, Lambda, S3)</span>
+                                    <span class="skill-pct">86%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="--skill-width: 86%;"></div></div>
+                            </div>
+                            <!-- Skill: CI/CD Pipelines -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-gears"></i> GitHub Actions & CI/CD</span>
+                                    <span class="skill-pct">90%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="--skill-width: 90%;"></div></div>
+                            </div>
+                            <!-- Skill: Linux & Git Version Control -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-brands fa-git-alt"></i> Git & Linux Administration</span>
+                                    <span class="skill-pct">95%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="--skill-width: 95%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- 6. INTERACTIVE TIMELINE (Career Milestones & Education)  -->
+        <!-- ======================================================= -->
+        <section id="timeline" class="timeline-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">&lt;QUEST_HISTORY&gt;</span>
+                    <h2 class="section-title">Career Milestones & Timeline</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="timeline-wrapper">
+                    
+                    <!-- Milestone 1: Lead Software Engineer -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content pixel-card-hover">
+                            <div class="timeline-header-bar">
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2023 - Present</span>
+                                <span class="timeline-badge-lvl">LVL: LEAD</span>
+                            </div>
+                            <h3 class="timeline-title">Lead Software Engineer</h3>
+                            <h4 class="timeline-company">Nexus Cloud Systems &bull; San Francisco, CA</h4>
+                            <p class="timeline-desc">
+                                Spearheaded architectural migration of monolithic backend to high-throughput microservices, reducing query latency by 45%. Led a distributed squad of 8 full-stack engineers and automated CI/CD deployment pipelines.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Go</span><span>AWS</span><span>Kubernetes</span><span>GraphQL</span><span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 2: Senior Full-Stack Developer -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content pixel-card-hover">
+                            <div class="timeline-header-bar">
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2021 - 2023</span>
+                                <span class="timeline-badge-lvl">LVL: SENIOR</span>
+                            </div>
+                            <h3 class="timeline-title">Senior Full-Stack Developer</h3>
+                            <h4 class="timeline-company">Apex Tech Solutions &bull; Austin, TX</h4>
+                            <p class="timeline-desc">
+                                Engineered real-time telemetry dashboards serving over 2,000,000 active monthly users. Optimized database indexing pipelines and implemented WebSocket channels with sub-50ms latency.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>React</span><span>TypeScript</span><span>Node.js</span><span>Redis</span><span>Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 3: Software Engineer -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content pixel-card-hover">
+                            <div class="timeline-header-bar">
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2019 - 2021</span>
+                                <span class="timeline-badge-lvl">LVL: MID</span>
+                            </div>
+                            <h3 class="timeline-title">Software Engineer</h3>
+                            <h4 class="timeline-company">InnoSoft Labs &bull; Seattle, WA</h4>
+                            <p class="timeline-desc">
+                                Built RESTful microservices, integrated third-party payment gateways (Stripe & PayPal), and instituted automated unit & integration testing suites achieving 92% coverage.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Python</span><span>Django</span><span>JavaScript</span><span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 4: B.S. in Computer Science -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content pixel-card-hover">
+                            <div class="timeline-header-bar">
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2015 - 2019</span>
+                                <span class="timeline-badge-lvl">ACADEMIC</span>
+                            </div>
+                            <h3 class="timeline-title">B.S. in Computer Science (Honors)</h3>
+                            <h4 class="timeline-company">State University of Technology</h4>
+                            <p class="timeline-desc">
+                                Graduated Magna Cum Laude. Specialization in Algorithms, Distributed Computing, Computer Architecture, and Artificial Intelligence.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Algorithms</span><span>Data Structures</span><span>Operating Systems</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- 7. PROJECTS SECTION (Clickable Thumbnails & Modals)      -->
+        <!-- ======================================================= -->
+        <section id="projects" class="projects-section section-padding alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">&lt;PORTFOLIO_PROJECTS&gt;</span>
+                    <h2 class="section-title">Featured Projects & Systems</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Projects Filter Buttons -->
+                <div class="projects-filter-bar">
+                    <button class="filter-btn active" data-filter="all">ALL [4]</button>
+                    <button class="filter-btn" data-filter="fullstack">FULL-STACK</button>
+                    <button class="filter-btn" data-filter="cloud">CLOUD / BACKEND</button>
+                    <button class="filter-btn" data-filter="ai">AI / ML</button>
+                </div>
+
+                <!-- Projects Grid of Clickable Cards -->
+                <div class="projects-grid" id="projects-container">
+                    
+                    <!-- PROJECT 1: Distributed Task Queue Scheduler -->
+                    <!-- Each article is clickable and opens the Project Detail Modal -->
+                    <article class="project-card pixel-project-card" data-category="cloud" data-project-id="project-1">
+                        <div class="project-thumbnail-wrapper">
+                            <div class="project-pixel-thumb thumb-bg-1">
+                                <i class="fa-solid fa-server thumb-icon"></i>
+                                <span class="project-tag-pill">CLOUD & INFRA</span>
+                            </div>
+                            <div class="project-hover-overlay">
+                                <span class="btn-quick-view"><i class="fa-solid fa-magnifying-glass-plus"></i> View Details</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-card-header">
+                                <h3 class="project-title">Distributed Task Scheduler</h3>
+                                <div class="project-links">
+                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository" title="GitHub Code"><i class="fa-brands fa-github"></i></a>
+                                    <a href="#" class="open-modal-link" aria-label="Open Project Details" title="Project Details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Fault-tolerant worker queue and cron scheduler capable of distributing millions of periodic background tasks across elastic cloud worker clusters.
+                            </p>
+                            <ul class="project-tech-list">
+                                <li>Go</li>
+                                <li>Redis</li>
+                                <li>gRPC</li>
+                                <li>Docker</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 2: Cloud Code IDE & Compiler -->
+                    <article class="project-card pixel-project-card" data-category="fullstack" data-project-id="project-2">
+                        <div class="project-thumbnail-wrapper">
+                            <div class="project-pixel-thumb thumb-bg-2">
+                                <i class="fa-solid fa-laptop-code thumb-icon"></i>
+                                <span class="project-tag-pill">FULL-STACK</span>
+                            </div>
+                            <div class="project-hover-overlay">
+                                <span class="btn-quick-view"><i class="fa-solid fa-magnifying-glass-plus"></i> View Details</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-card-header">
+                                <h3 class="project-title">Cloud Code IDE & Sandbox</h3>
+                                <div class="project-links">
+                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository" title="GitHub Code"><i class="fa-brands fa-github"></i></a>
+                                    <a href="#" class="open-modal-link" aria-label="Open Project Details" title="Project Details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Collaborative browser-based IDE featuring real-time syntax highlighting, AST parsing, sandboxed multi-language execution, and live room sharing.
+                            </p>
+                            <ul class="project-tech-list">
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>WebAssembly</li>
+                                <li>Node.js</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 3: AI Knowledge Graph API -->
+                    <article class="project-card pixel-project-card" data-category="ai" data-project-id="project-3">
+                        <div class="project-thumbnail-wrapper">
+                            <div class="project-pixel-thumb thumb-bg-3">
+                                <i class="fa-solid fa-brain thumb-icon"></i>
+                                <span class="project-tag-pill">AI & SEARCH</span>
+                            </div>
+                            <div class="project-hover-overlay">
+                                <span class="btn-quick-view"><i class="fa-solid fa-magnifying-glass-plus"></i> View Details</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-card-header">
+                                <h3 class="project-title">AI Knowledge Graph API</h3>
+                                <div class="project-links">
+                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository" title="GitHub Code"><i class="fa-brands fa-github"></i></a>
+                                    <a href="#" class="open-modal-link" aria-label="Open Project Details" title="Project Details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Semantic search vector engine linking technical documentation, code snippets, and pull requests using embedding indexes and fast graph traversals.
+                            </p>
+                            <ul class="project-tech-list">
+                                <li>Python</li>
+                                <li>FastAPI</li>
+                                <li>Pinecone</li>
+                                <li>PyTorch</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 4: Real-time Telemetry Dashboard -->
+                    <article class="project-card pixel-project-card" data-category="fullstack" data-project-id="project-4">
+                        <div class="project-thumbnail-wrapper">
+                            <div class="project-pixel-thumb thumb-bg-4">
+                                <i class="fa-solid fa-chart-line thumb-icon"></i>
+                                <span class="project-tag-pill">MONITORING</span>
+                            </div>
+                            <div class="project-hover-overlay">
+                                <span class="btn-quick-view"><i class="fa-solid fa-magnifying-glass-plus"></i> View Details</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-card-header">
+                                <h3 class="project-title">Telemetry & APM Monitor</h3>
+                                <div class="project-links">
+                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository" title="GitHub Code"><i class="fa-brands fa-github"></i></a>
+                                    <a href="#" class="open-modal-link" aria-label="Open Project Details" title="Project Details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Real-time application performance monitoring suite tracking server memory, CPU spikes, request latencies, and distributed tracing.
+                            </p>
+                            <ul class="project-tech-list">
+                                <li>Next.js</li>
+                                <li>PostgreSQL</li>
+                                <li>WebSockets</li>
+                                <li>Tailwind/CSS</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- 8. EMBEDDED VIDEO SHOWCASE SECTION (Responsive YouTube/MP4) -->
+        <!-- ======================================================= -->
+        <section id="video-showcase" class="video-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">&lt;VIDEO_STREAM&gt;</span>
+                    <h2 class="section-title">Architecture Demo & Talk</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="video-showcase-wrapper pixel-video-box">
+                    <!-- Responsive Video Frame Container (Aspect Ratio 16:9) -->
+                    <div class="video-responsive-container">
+                        <!-- Embedded YouTube Video / Local Video Showcase -->
+                        <iframe 
+                            class="responsive-iframe"
+                            src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?controls=1&rel=0" 
+                            title="Software Architecture Demo & Engineering Overview" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <!-- Video Caption & Highlights Bar -->
+                    <div class="video-caption-bar">
+                        <div class="video-badge-tag">
+                            <i class="fa-solid fa-play"></i> <span>FEATURED SHOWCASE</span>
+                        </div>
+                        <h3 class="video-caption-title">High-Throughput Microservice Architecture & Event-Driven Systems</h3>
+                        <p class="video-caption-text">
+                            A deep dive into scalable cloud architectures, designing resilient distributed queues, and optimizing real-time state synchronization for low-latency web applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- 9. TESTIMONIALS SECTION (Client & Peer Reviews)         -->
+        <!-- ======================================================= -->
+        <section id="testimonials" class="testimonials-section section-padding alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">&lt;PEER_REVIEWS&gt;</span>
+                    <h2 class="section-title">Client & Team Testimonials</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="testimonials-grid">
+                    
+                    <!-- Review 1: VP of Engineering -->
+                    <div class="testimonial-card pixel-card-hover">
+                        <div class="testimonial-header">
+                            <div class="testimonial-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="quote-icon"><i class="fa-solid fa-quote-right"></i></span>
+                        </div>
+                        <p class="testimonial-text">
+                            "Alex is one of those rare engineers who can dive into complex database deadlocks in the morning and build a pixel-perfect, accessible user interface in the afternoon. A true force multiplier on our team."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar-pixel">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div class="author-meta">
+                                <h4 class="author-name">Sarah Jenkins</h4>
+                                <span class="author-role">VP of Engineering &bull; Nexus Cloud</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2: Principal Architect -->
+                    <div class="testimonial-card pixel-card-hover">
+                        <div class="testimonial-header">
+                            <div class="testimonial-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="quote-icon"><i class="fa-solid fa-quote-right"></i></span>
+                        </div>
+                        <p class="testimonial-text">
+                            "The distributed queue scheduler Alex built transformed our backend throughput. It effortlessly handles 50M+ events every day with zero downtime. Exceptional architectural intuition!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar-pixel">
+                                <i class="fa-solid fa-user-astronaut"></i>
+                            </div>
+                            <div class="author-meta">
+                                <h4 class="author-name">David Zhao</h4>
+                                <span class="author-role">Principal Systems Architect</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3: Senior Product Manager -->
+                    <div class="testimonial-card pixel-card-hover">
+                        <div class="testimonial-header">
+                            <div class="testimonial-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="quote-icon"><i class="fa-solid fa-quote-right"></i></span>
+                        </div>
+                        <p class="testimonial-text">
+                            "Working with Alex made our product roadmap a breeze. Features were always shipped ahead of schedule, with rock-solid reliability and proactive communication throughout each sprint."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar-pixel">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <div class="author-meta">
+                                <h4 class="author-name">Elena Rostova</h4>
+                                <span class="author-role">Lead Product Manager &bull; Apex Tech</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- 10. AI CHAT INTERFACE SECTION (Interactive Virtual Alex)-->
+        <!-- ======================================================= -->
+        <section id="ai-chat" class="ai-chat-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">&lt;AI_ASSISTANT&gt;</span>
+                    <h2 class="section-title">Chat with AI Alex</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="chat-container pixel-chat-box">
+                    <!-- Chat Header Bar -->
+                    <div class="chat-header">
+                        <div class="chat-status-indicator">
+                            <span class="pulse-dot"></span>
+                            <div class="chat-title-group">
+                                <h3>ALEX_BOT v2.4 [ONLINE]</h3>
+                                <span class="chat-status-text">Ready to answer questions about Alex's skills, projects & availability</span>
+                            </div>
+                        </div>
+                        <button class="chat-clear-btn" id="chat-clear-btn" title="Clear Chat History">
+                            <i class="fa-solid fa-trash-can"></i> <span>CLEAR</span>
+                        </button>
+                    </div>
+
+                    <!-- Chat Messages Display Area -->
+                    <div class="chat-messages" id="chat-messages" role="log" aria-live="polite">
+                        <!-- Initial Welcome Message from Bot -->
+                        <div class="message bot-message">
+                            <div class="message-avatar"><i class="fa-solid fa-robot"></i></div>
+                            <div class="message-content">
+                                <p>Greetings! I'm <strong>AlexBot</strong>, an interactive AI trained on Alex Morgan's resume, tech stack, and software engineering background. How can I assist you today?</p>
+                                <span class="message-time">Just now</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Suggested Prompts / Chips -->
+                    <div class="chat-chips" id="chat-chips">
+                        <button class="chip-btn" data-prompt="What is your primary tech stack?">💻 Primary Tech Stack</button>
+                        <button class="chip-btn" data-prompt="Tell me about your most complex project.">🚀 Top Projects</button>
+                        <button class="chip-btn" data-prompt="Are you open to full-time or contract roles?">💼 Availability for Hire</button>
+                        <button class="chip-btn" data-prompt="How can I contact Alex directly?">📬 Contact Info</button>
+                    </div>
+
+                    <!-- Chat Input Area -->
+                    <form class="chat-input-form" id="chat-form">
+                        <label for="chat-input" class="sr-only">Type your question for AI Alex</label>
+                        <input 
+                            type="text" 
+                            id="chat-input" 
+                            class="chat-input-field" 
+                            placeholder="Ask AlexBot anything (e.g. 'What databases do you use?')..." 
+                            autocomplete="off"
+                            required>
+                        <button type="submit" class="btn pixel-btn pixel-btn-primary chat-send-btn" id="chat-send-btn" aria-label="Send Message">
+                            <span>SEND</span> <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- 11. CONTACT FORM SECTION (Email API Integration Ready)  -->
+        <!-- ======================================================= -->
+        <section id="contact" class="contact-section section-padding alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">&lt;ESTABLISH_COMMUNICATION&gt;</span>
+                    <h2 class="section-title">Send A Transmission</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Contact Information & Direct Channels -->
+                    <div class="contact-info pixel-box-sm">
+                        <div class="contact-badge">
+                            <i class="fa-solid fa-satellite-dish"></i> <span>DIRECT CHANNELS</span>
+                        </div>
+                        <h3>Let's Collaborate On Something Great</h3>
+                        <p>
+                            I am currently open to senior software engineering roles, technical architecture consulting, and high-impact freelance projects. Send a message and I'll respond within 24 hours.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span class="contact-label">EMAIL ADDRESS</span>
+                                    <a href="mailto:alex.morgan@example.com" class="contact-value">alex.morgan@example.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span class="contact-label">LOCATION</span>
+                                    <p class="contact-value">San Francisco, CA &bull; Open to Remote Worldwide</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+                                <div>
+                                    <span class="contact-label">TIMEZONE</span>
+                                    <p class="contact-value">PST / UTC-8 (Flexible for Global Teams)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Form -->
+                    <!-- 
+                        EMAIL SERVICE INTEGRATION NOTE:
+                        To integrate with Resend API / Formspree / EmailJS:
+                        Replace or supplement the JS submission handler in script.js with your endpoint.
+                    -->
+                    <form class="contact-form pixel-box" id="contact-form" novalidate>
+                        <div class="pixel-box-header">
+                            <span class="pixel-dot red"></span>
+                            <span class="pixel-dot yellow"></span>
+                            <span class="pixel-dot green"></span>
+                            <span class="pixel-window-title">SEND_MESSAGE.FORM</span>
+                        </div>
+
+                        <!-- Form Submission Status Toast (Success/Error feedback) -->
+                        <div class="form-feedback-alert" id="form-feedback" style="display: none;"></div>
+
+                        <div class="form-group">
+                            <label for="contact-name">Your Full Name <span class="required">*</span></label>
+                            <input type="text" id="contact-name" name="name" required placeholder="Jane Doe" class="pixel-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email">Your Email Address <span class="required">*</span></label>
+                            <input type="email" id="contact-email" name="email" required placeholder="jane@company.com" class="pixel-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject">Subject <span class="required">*</span></label>
+                            <input type="text" id="contact-subject" name="subject" required placeholder="Engineering Role / Project Proposal" class="pixel-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Message Details <span class="required">*</span></label>
+                            <textarea id="contact-message" name="message" rows="5" required placeholder="Tell me about your project, timeline, or engineering opportunity..." class="pixel-input"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn pixel-btn pixel-btn-primary btn-block" id="contact-submit-btn">
+                            <span>SEND TRANSMISSION</span> <i class="fa-regular fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================================================= -->
+    <!-- 12. FOOTER SECTION (Pixel Art Socials & Accessibility)   -->
+    <!-- ======================================================= -->
+    <footer class="site-footer" id="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#hero" class="logo" aria-label="Alex Morgan Home">
+                    <span class="logo-code">&lt;</span><span class="logo-name">AlexMorgan</span><span class="logo-code"> /&gt;</span>
+                </a>
+                <p>&copy; <span id="current-year">2026</span> Alex Morgan. Engineered with clean standards and pixel passion.</p>
+            </div>
+
+            <!-- Social Media Profile Links (Evenly Spaced with Pixel Hover Styles) -->
+            <div class="footer-social-group">
+                <span class="social-label">[ CONNECT WITH ME ]</span>
+                <div class="social-links pixel-socials">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Alex Morgan on GitHub" title="GitHub Profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Alex Morgan on LinkedIn" title="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Alex Morgan on X (Twitter)" title="X / Twitter Profile">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://discord.com" target="_blank" rel="noopener noreferrer" aria-label="Alex Morgan on Discord" title="Discord Community">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                    <a href="mailto:alex.morgan@example.com" aria-label="Send direct email to Alex Morgan" title="Direct Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Back to top button -->
+            <div class="footer-right">
+                <a href="#hero" class="btn pixel-btn pixel-btn-secondary back-to-top-btn" aria-label="Return to top of page">
+                    <i class="fa-solid fa-arrow-up"></i> <span>TOP</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======================================================= -->
+    <!-- PROJECT DETAILS MODAL DIALOG (For Section 7)            -->
+    <!-- ======================================================= -->
+    <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+        <div class="modal-content pixel-box">
+            <div class="modal-header">
+                <span class="pixel-window-title" id="modal-window-title">PROJECT_INSPECTOR.EXE</span>
+                <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body-content">
+                <!-- Dynamically populated via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
